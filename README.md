@@ -6,7 +6,7 @@ lianjia-spider
 
 软件：python 3.9.2, pip3, scrapy 2.9
 
-1. 安装python3.9和scrapy (https://www.ngui.cc/el/3159196.html?action=onClick)
+1. 安装python3.9和scrapy
    1. python3.9已经集成，用 python3 --version 查看，结果为3.9.2
    2. pip3 
       1. sudo apt install python3-venv python3-pip
