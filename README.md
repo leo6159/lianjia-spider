@@ -1,10 +1,11 @@
 # lianjia-spider
-lianjia-spider
 # 使用scrapy进行lianjia网站的信息抓取、比对和处理
 ## 环境
 操作系统：debian 11.7
 
 软件：python 3.9.2, pip3, scrapy 2.9
+
+数据库：sqlite3
 
 1. 安装python3.9和scrapy
    1. python3.9已经集成，用 python3 --version 查看，结果为3.9.2
@@ -15,3 +16,7 @@ lianjia-spider
       2. sudo apt-get install build-essential python3-dev libssl-dev libffi-dev libxml2 libxml2-dev libxsltl-dev zliblg-dev
       3. sudo pip3 install Scrapy
    4. scrapy version查看，Scrapy 2.9.0
+2. 将程序下载解压到debian中
+3. 修改run-tutorial.sh的权限
+   1. chmod 755 run-tutorial.sh
+4. 执行./run-tutorial.sh
