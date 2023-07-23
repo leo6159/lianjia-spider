@@ -19,4 +19,11 @@
 2. 将程序下载解压到debian中
 3. 修改run-tutorial.sh的权限
    1. chmod 755 run-tutorial.sh
-4. 执行./run-tutorial.sh
+4. 执行./run-tutorial.sh，默认会采集北京市海淀区100-1000个w的房源信息并入库，存入lj.db。其中lj.db是sqlite3数据库，只有一个主表。
+
+## 使用说明
+1. 主要程序逻辑与参数位置：tutorial/tutorial/spiders/dmoz_spider.py
+   1. low_price： 准备采集的最低房价
+   2. high_price： 准备采集的最高房价
+   3. set_start_urls 采集url链接集合
+   4. capted_url_status 已采集链接，避免重复采集入库
