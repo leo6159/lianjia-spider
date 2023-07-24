@@ -21,6 +21,9 @@
    1. chmod 755 run-tutorial.sh
 4. 执行./run-tutorial.sh，默认会采集北京市海淀区100-1000个w的房源信息并入库，存入lj.db。其中lj.db是sqlite3数据库，只有一个主表。
 
+### windows下的环境搭建
+TODO
+
 ## 使用说明
 1. 主要程序逻辑与参数位置：tutorial/tutorial/spiders/dmoz_spider.py
    1. low_price： 准备采集的最低房价
