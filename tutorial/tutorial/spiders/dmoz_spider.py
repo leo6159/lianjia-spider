@@ -79,7 +79,7 @@ class DmozSpider(scrapy.spiders.Spider):
         niandai = response.xpath("/html/body/div[5]/div[2]/div[4]/div[3]/div[2]/text()").extract()[0]
         nianxian = response.xpath("//*[@id='introduction']/div/div/div[2]/div[2]/ul/li[5]/span[2]/text()").extract()[0]
         chanquan = response.xpath("//*[@id='introduction']/div/div/div[2]/div[2]/ul/li[6]/span[2]/text()").extract()[0]
-        dianti = response.xpath("//*[@id='introduction']/div/div/div[1]/div[2]/ul/li[12]/text()").extract()[0]
+        dianti = response.xpath("//*[@id='introduction']/div/div/div[1]/div[2]/ul/li[12]/text()").extract_first()
         quanshu = response.xpath("//*[@id='introduction']/div/div/div[2]/div[2]/ul/li[2]/span[2]/text()").extract()[0]
 
         guapaidate = response.xpath("//*[@id='introduction']/div/div/div[2]/div[2]/ul/li[1]/span[2]/text()").extract()[0]
