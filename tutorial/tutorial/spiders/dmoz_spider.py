@@ -116,6 +116,7 @@ class DmozSpider(scrapy.spiders.Spider):
         item["shangcidate"] = shangcidate
         item["quyu"] = quyu
         item["qu"] = qu
+        item["status"] = 0
 
         f_mianji = 0
         try:
