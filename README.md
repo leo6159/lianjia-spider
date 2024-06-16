@@ -32,9 +32,9 @@
    4. capted_url_status 已采集链接，避免重复采集入库
 
 ## 更新记录
-2024-6-16 链家更新了反爬机制，可以看到有code 418 的错误，这需要讲request中的header设置一下。
-方法有几种，简单的可以在settings.py 中打开DEFAULT_REQUEST_HEADERS的注释，并写入相应的请求头信息，如：
-DEFAULT_REQUEST_HEADERS = {
-  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-  'Accept-Language': 'en',
-}
+2024-6-16 链家更新了反爬机制，可以看到有code 418 的错误，这需要讲request中的header设置一下。  
+方法有几种，简单的可以在settings.py 中打开DEFAULT_REQUEST_HEADERS的注释，并写入相应的请求头信息，如：  
+> DEFAULT_REQUEST_HEADERS = {
+>   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+>   'Accept-Language': 'en',
+> }
